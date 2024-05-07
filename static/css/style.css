@@ -1,0 +1,637 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Lexend:wght@100..900&display=swap');
+
+/* common css start */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+/* common css end */
+
+
+/* Navbar css part start */
+.nav-link{
+    color: #000;
+    font-family: Alata;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.mg-right{
+    margin-right: 80px;
+}
+.navbar{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.reg{
+    border-radius: 5px;
+    background: #FF8235;
+}
+/* Navbar css part end */
+
+/* Banner part start */
+.banner{
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+.banner-heading{
+    color: #FFF;
+    font-family: Lexend;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 132px;
+    text-align: center;
+}
+
+
+/* Edit korte hobe start */
+.group-19,
+.group-19 * {
+  box-sizing: border-box;
+}
+.group-19 {
+  position: relative;
+}
+.search {
+  width: 1147px;
+  height: 97px;
+  position: static;
+}
+.rectangle-7 {
+  background: #d9d9d9;
+  border-radius: 10px;
+  width: 1147px;
+  height: 97px;
+  position: absolute;
+  left: 0px;
+  top: 92px;
+}
+.rectangle-8 {
+  background: #3d2462;
+  width: 61px;
+  height: 61px;
+  position: absolute;
+  left: 1066px;
+  top: 110px;
+}
+.search-alumni-keywords-companies {
+  color: rgba(35, 9, 57, 0.7);
+  text-align: left;
+  font-family: "Alata-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 37px;
+  top: 124px;
+}
+.enter-university-name {
+  color: rgba(35, 9, 57, 0.7);
+  text-align: left;
+  font-family: "Alata-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 639px;
+  top: 124px;
+}
+.rectangle-9 {
+  background: #230939;
+  width: 1px;
+  height: 69px;
+  position: absolute;
+  left: calc(50% - 36px);
+  top: calc(50% - 60.5px);
+}
+.group-9 {
+  width: 22.17px;
+  height: 24px;
+  position: absolute;
+  left: 1085px;
+  top: 129px;
+  overflow: visible;
+}
+.find-alumni-of-your-university {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Lexend-Bold", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  position: absolute;
+  left: calc(50% - 380px);
+  top: 0px;
+}
+.group-13 {
+  width: 1148px;
+  height: 100px;
+  position: static;
+}
+.popular-search {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Alata-Regular", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  position: absolute;
+  left: 10px;
+  top: 229px;
+}
+.group-14 {
+  width: 211px;
+  height: 55px;
+  position: static;
+}
+.rectangle-10 {
+  background: #38224b;
+  border-radius: 20px;
+  width: 211px;
+  height: 55px;
+  position: absolute;
+  left: 0px;
+  top: 274px;
+}
+.group-11 {
+  width: 22.17px;
+  height: 24px;
+  position: absolute;
+  left: 161px;
+  top: 289px;
+  overflow: visible;
+}
+.ui-ux-design {
+  color: #d9d9d9;
+  text-align: left;
+  font-family: "Alata-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 27px;
+  top: 287px;
+}
+.group-17 {
+  width: 152px;
+  height: 55px;
+  position: static;
+}
+.rectangle-102 {
+  background: #38224b;
+  border-radius: 20px;
+  width: 152px;
+  height: 55px;
+  position: absolute;
+  left: 817px;
+  top: 274px;
+}
+.group-112 {
+  width: 22.17px;
+  height: 24px;
+  position: absolute;
+  left: 916px;
+  top: 289px;
+  overflow: visible;
+}
+.bubt {
+  color: #d9d9d9;
+  text-align: left;
+  font-family: "Alata-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 844px;
+  top: 287px;
+}
+.group-18 {
+  width: 152px;
+  height: 55px;
+  position: static;
+}
+.rectangle-103 {
+  background: #38224b;
+  border-radius: 20px;
+  width: 152px;
+  height: 55px;
+  position: absolute;
+  left: 996px;
+  top: 274px;
+}
+.group-113 {
+  width: 22.17px;
+  height: 24px;
+  position: absolute;
+  left: 1094px;
+  top: 289px;
+  overflow: visible;
+}
+.buet {
+  color: #d9d9d9;
+  text-align: left;
+  font-family: "Alata-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 1022px;
+  top: 287px;
+}
+.group-15 {
+  width: 263px;
+  height: 55px;
+  position: static;
+}
+.rectangle-104 {
+  background: #38224b;
+  border-radius: 20px;
+  width: 263px;
+  height: 55px;
+  position: absolute;
+  left: 238px;
+  top: 274px;
+}
+.group-114 {
+  width: 22.17px;
+  height: 24px;
+  position: absolute;
+  left: 451px;
+  top: 289px;
+  overflow: visible;
+}
+.web-development {
+  color: #d9d9d9;
+  text-align: left;
+  font-family: "Alata-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 265px;
+  top: 287px;
+}
+.group-16 {
+  width: 263px;
+  height: 55px;
+  position: static;
+}
+.rectangle-105 {
+  background: #38224b;
+  border-radius: 20px;
+  width: 263px;
+  height: 55px;
+  position: absolute;
+  left: 527px;
+  top: 274px;
+}
+.group-115 {
+  width: 22.17px;
+  height: 24px;
+  position: absolute;
+  left: 741px;
+  top: 289px;
+  overflow: visible;
+}
+.app-development {
+  color: #d9d9d9;
+  text-align: left;
+  font-family: "Alata-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 554px;
+  top: 287px;
+}
+/* Edit korte hobe end */
+
+/* Banner part end */
+
+/* Details section css start */
+.details{
+    margin-top: 130px;
+    margin-bottom: 120px;
+}
+.detail-text h1{
+    color: #000;
+    font-family: Lexend;
+    font-size: 43px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 32px;
+}
+.detail-text .dot{
+    color: #F2B127;
+    font-family: Lexend;
+    font-size: 43px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.detail-text p{
+    color: #000;
+    font-family: Alata;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 32px;
+}
+
+.item{
+    display: flex;
+    padding-bottom: 22px;
+}
+.item img{
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+}
+.item h4{
+    color: #000;
+    font-family: Alata;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.detail-note{
+    width: 531px;
+    height: 86px;
+    flex-shrink: 0;
+    background: #E1CDFF;
+    border-left: 2px solid #3D2462;
+}
+.detail-note p{
+    color: #000;
+    font-family: Alata;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.32px;
+
+    padding: 20px 15px;
+}
+.button{
+    padding-top: 50px;
+}
+.btn-cus{
+    display: inline-flex;
+    padding: 13px 81px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    background: #3D2462;
+    color: #FFF;
+    font-family: Alata;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.48px;
+}
+.btn-cus:hover{
+    background-color: #3D2462;
+}
+/* Details section css end */
+
+
+/* Event and workshop css start */
+.event{
+    width: 100%;
+    height: 1900px;
+    flex-shrink: 0;
+    background: rgba(176, 81, 170, 0.15);
+}
+.event-head{
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.event-head h1{
+    color: #3D2462;
+    font-family: Lexend;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.event-card{
+    width: 530px;
+    height: 720px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    background: #3D2462;
+    text-align: center;
+}
+.card-img{
+    padding-top: 60px;
+}
+.card-title{
+    padding-top: 37px;
+    padding-bottom: 19px;
+}
+.card-title h1{
+    color: #FFF;
+    font-family: Lexend;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.card-para{
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-bottom: 18px;
+}
+.card-para p{
+    color: #9c9a9a;
+    text-align: center;
+    font-family: Alata;
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.58px;
+}
+
+.card-btn{
+    width: 292px;
+    height: 58px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #D9D9D9;
+    color: #3D2462;
+    font-family: Alata;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.event-card-1{
+    padding-bottom: 80px;
+}
+/* Event and workshop css end */
+
+/* University list css start */
+.universityList{
+    width: 100%;
+    background: #FFF;
+    padding-bottom: 100px;
+}
+.university{
+    padding-bottom: 120px;
+}
+.list-head{
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+.list-head h1{
+    color: #3D2462;
+    font-family: Lexend;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.carousel-img{
+    padding-left: 350px;
+}
+
+.noteCard{
+    width: 1280px;
+    height: 228px;
+    flex-shrink: 0;
+    background: #FF8235;
+    position: absolute;
+    margin: 0px auto;
+    bottom: -3400px;
+}
+
+.cardText h1{
+    color: #FFF;
+    font-family: Lexend;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 70px;
+    padding-bottom: 12px;
+    padding-left: 70px;
+}
+.cardText p{
+    color: #FFF;
+    font-family: Alata;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 70px;
+    padding-left: 70px;
+}
+.btnCard{
+    padding-top: 65px;
+}
+.cardButton{
+    width: 311px;
+    height: 98px;
+    flex-shrink: 0;
+    background: #FFF;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
+    border: none;
+    color: #171B2A;
+    font-family: Lexend;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 5px;
+}
+.arrImg{
+    padding-left: 40px;
+}
+/* University list css end */
+
+/* Footer part css start */
+.footer{
+    width: 100%;
+    height: 683px;
+    flex-shrink: 0;
+    background: #3D2462;
+}
+
+.importantLink{
+    padding-top: 240px;
+}
+.text h1{
+    color: var(--White, #FFF);
+    font-family: Lexend;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+.text a{
+    color: var(--White, #FFF);
+    font-family: Alata;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 200% */
+    opacity: 0.7984;
+    text-decoration: none;
+}
+
+.tt2{
+    color: var(--White, #FFF);
+    font-family: Alata;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 200% */
+    opacity: 0.7984;
+}
+.linktext{
+    padding-bottom: 60px;
+}
+.divider{
+    width: 100%;
+    height: 1px;
+    flex-shrink: 0;
+    opacity: 0.1;
+    background: var(--White, #FFF);
+}
+.mainFooter{
+    padding-top: 20px;
+}
+
+.copyright{
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: Alata;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    padding-top: 20px;
+}
+.social{
+    padding-top: 10px;
+    padding-left: 280px;
+}
+/* Footer part css end */
