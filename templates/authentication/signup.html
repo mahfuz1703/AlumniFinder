@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Finder | Your Career Assistant</title>
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/signup.css">
+</head>
+
+<body>
+
+    <!-- Navbar part start -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a href="/" class="navbar-brand">
+                <img src="/static/img/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-icon">
+                <i class="bi bi-border-width"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-icon">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="findAlumni.html" class="nav-link mg-right">Find Alumni</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="imAlumni.html" class="nav-link mg-right">I'm Alumni</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="events.html" class="nav-link mg-right">Events/Workshops</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/login" class="nav-link">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/signup" class="nav-link reg">Signup</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar part end -->
+
+
+    <!-- signup part start -->
+    <section class="signup">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 signup-left">
+                    <div class="signup-banner">
+                        <h1> <span>Find Alumni <br></span> Of Your University</h1>
+                        <button>
+                            <a href="/login">Login</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="signup-right">
+                        <div class="signup-head">
+                            <h1>Signup your Account</h1>
+                        </div>
+                        <form action="/signup" method="post">
+                        {% csrf_token %}
+                            <input type="text" name="username" id="username" required placeholder="Create a username"> <br>
+                            
+                            <input type="text" name="fname" id="fname" required placeholder="Enter your first name"> <br>
+                            
+                            <input type="text" name="lname" id="lname" required placeholder="Enter your last name">
+
+                            <input type="email" name="email" id="email" required placeholder="Enter your valid email"> <br>
+                            
+                            <input type="password" name="pass1" id="pass1" required placeholder="Create your password"> <br>
+
+                            <input type="password" name="pass2" id="pass2" required placeholder="Confirm your password"> <br>
+  
+                            <button type="submit" class="signup-btn">Signup</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- signup part end -->
+
+
+    <!-- Footer part start -->
+    <section class="footeer">
+        <div class="container">
+            <div class="importantLink customFooter">
+                <div class="row linktext">
+                    <div class="col-3">
+                        <div class="text">
+                            <h1>Navigation</h1>
+                            <a href="/">Home</a> <br>
+                            <a href="findAlumni.html">Find Alumni</a> <br>
+                            <a href="imAlumni.html">I'm Alumni</a> <br>
+                            <a href="events.html">Events</a> <br>
+                            <a href="/signup">signup</a> <br>
+                            <a href="/login">Login</a> <br>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="text">
+                            <h1>What We Do</h1>
+                            <p class="tt2">Encouraging Testing</p>
+                            <p class="tt2">Strengthening Advocacy</p>
+                            <p class="tt2">Sharing Information</p>
+                            <p class="tt2">Building Leadership</p>
+                            <p class="tt2">Shining a Light</p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="text">
+                            <h1>LEGAL</h1>
+                            <a href="error.html">General Info</a> <br>
+                            <a href="error.html">Privacy Policy</a> <br>
+                            <a href="error.html">Terms of Service</a> <br>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="text">
+                            <h1>TALK TO US</h1>
+                            <a href="">support@alumnifinder.com</a> <br>
+                            <a href="">+66 2399 1145</a> <br>
+                            <a href="">Contact Us</a> <br>
+                            <a href="">Facebook</a> <br>
+                            <a href="">Linkedin</a> <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="divider">
+
+                    </div>
+                </div>
+                <div class="row mainFooter">
+                    <div class="col-4">
+                        <a href="/">
+                            <img src="/static/img/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <p class="copyright">© 2024 Alumni Finder . All Rights Reserved. </p>
+                    </div>
+                    <div class="col-4 social">
+                        <img src="/static/img/Social.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer part end -->
+
+    <script src="/static/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

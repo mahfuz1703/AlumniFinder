@@ -1,3 +1,4 @@
+{% csrf_token %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +15,7 @@
     <!-- Navbar part start -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a href="index.html" class="navbar-brand">
+            <a href="/" class="navbar-brand">
                 <img src="/static/img/logo.png" alt="">
             </a>
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-icon">
@@ -31,12 +32,23 @@
                     <li class="nav-item">
                         <a href="events.html" class="nav-link mg-right">Events/Workshops</a>
                     </li>
+
+                    {% if user.is_authenticated %}
                     <li class="nav-item">
-                        <a href="login.html" class="nav-link">Login</a>
+                        <a href="" class="nav-link">Hello, {{ fname }}</a>
+                        <!-- <h3>Hello, {{fname}}!!</h3> -->
                     </li>
                     <li class="nav-item">
-                        <a href="signup.html" class="nav-link reg">Signup</a>
+                        <a href="/signout" class="nav-link reg">Logout</a>
                     </li>
+                    {% else %}
+                    <li class="nav-item">
+                        <a href="/login" class="nav-link">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/signup" class="nav-link reg">Signup</a>
+                    </li>
+                    {% endif %}
                 </ul>
             </div>
         </div>
@@ -284,12 +296,12 @@
                     <div class="col-3">
                         <div class="text">
                             <h1>Navigation</h1>
-                            <a href="index.html">Home</a> <br>
+                            <a href="/">Home</a> <br>
                             <a href="findAlumni.html">Find Alumni</a> <br>
                             <a href="imAlumni.html">I'm Alumni</a> <br>
                             <a href="events.html">Event</a> <br>
-                            <a href="login.html">Login</a> <br>
-                            <a href="signup.html">Signup</a> <br>
+                            <a href="/login">Login</a> <br>
+                            <a href="/signup">Signup</a> <br>
                         </div>
                     </div>
                     <div class="col-3">
@@ -327,7 +339,7 @@
                 </div>
                 <div class="row mainFooter">
                     <div class="col-4">
-                        <a href="index.html">
+                        <a href="/">
                             <img src="/static/img/logo.png" alt="">
                         </a>
                     </div>
