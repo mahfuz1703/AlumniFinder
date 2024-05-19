@@ -12,6 +12,17 @@
 
 <body>
 
+    <div class="container" style="text-align: center;">
+        {% if messages %}
+            {% for message in messages %}
+                <div class="alert alert-{{ message.tags }} alert-dismissible text-center" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <strong>{% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}Error{% else %}{{ message.tags|title }}{% endif %}!</strong> {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+    </div>
+
     <!-- Navbar part start -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
@@ -33,7 +44,7 @@
                         <a href="events.html" class="nav-link mg-right">Events/Workshops</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/login" class="nav-link">Login</a>
+                        <a href="/signin" class="nav-link">Login</a>
                     </li>
                     <li class="nav-item">
                         <a href="/signup" class="nav-link reg">Signup</a>
@@ -62,12 +73,12 @@
                         <div class="login-head">
                             <h1>Log in to your Account</h1>
                         </div>
-                        <form action="/login" method="post">
+                        <form action="/signin" method="post">
                         {% csrf_token %}
                             <!-- <label for="email">Email Address</label> <br> -->
                             <input type="text" name="username" id="username" required placeholder="Enter your username"> <br>
                             <!-- <label for="email">Password</label> <br> -->
-                            <input type="password" name="password" id="password" required placeholder="Entr your password"> <br>
+                            <input type="password" name="pass1" id="pass1" required placeholder="Entr your password"> <br>
                             <a href="" class="forgat">Forgot Password ?</a> <br>
   
                             <button type="submit" class="login-btn">Login</button>
@@ -110,7 +121,7 @@
                             <a href="imAlumni.html">I'm Alumni</a> <br>
                             <a href="events.html">Events</a> <br>
                             <a href="/signup">signup</a> <br>
-                            <a href="/login">Login</a> <br>
+                            <a href="/signin">Login</a> <br>
                         </div>
                     </div>
                     <div class="col-3">

@@ -12,6 +12,17 @@
 
 <body>
 
+    <div class="container" style="text-align: center;">
+        {% if messages %}
+            {% for message in messages %}
+                <div class="alert alert-{{ message.tags }} alert-dismissible text-center" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <strong>{% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}Error{% else %}{{ message.tags|title }}{% endif %}!</strong> {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+    </div>
+
     <!-- Navbar part start -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
@@ -33,7 +44,7 @@
                         <a href="events.html" class="nav-link mg-right">Events/Workshops</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/login" class="nav-link">Login</a>
+                        <a href="/signin" class="nav-link">Login</a>
                     </li>
                     <li class="nav-item">
                         <a href="/signup" class="nav-link reg">Signup</a>
@@ -53,7 +64,7 @@
                     <div class="signup-banner">
                         <h1> <span>Find Alumni <br></span> Of Your University</h1>
                         <button>
-                            <a href="/login">Login</a>
+                            <a href="/signin">Login</a>
                         </button>
                     </div>
                 </div>
@@ -99,7 +110,7 @@
                             <a href="imAlumni.html">I'm Alumni</a> <br>
                             <a href="events.html">Events</a> <br>
                             <a href="/signup">signup</a> <br>
-                            <a href="/login">Login</a> <br>
+                            <a href="/signin">Login</a> <br>
                         </div>
                     </div>
                     <div class="col-3">

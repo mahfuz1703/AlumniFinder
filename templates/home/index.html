@@ -12,6 +12,17 @@
 
 <body>
 
+    <div class="container" style="text-align: center;">
+        {% if messages %}
+            {% for message in messages %}
+                <div class="alert alert-{{ message.tags }} alert-dismissible text-center" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <strong>{% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}Error{% else %}{{ message.tags|title }}{% endif %}!</strong> {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+    </div>
+
     <!-- Navbar part start -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
@@ -36,14 +47,13 @@
                     {% if user.is_authenticated %}
                     <li class="nav-item">
                         <a href="" class="nav-link">Hello, {{ fname }}</a>
-                        <!-- <h3>Hello, {{fname}}!!</h3> -->
                     </li>
                     <li class="nav-item">
-                        <a href="/signout" class="nav-link reg">Logout</a>
+                        <a href="/signOut" class="nav-link reg">Logout</a>
                     </li>
                     {% else %}
                     <li class="nav-item">
-                        <a href="/login" class="nav-link">Login</a>
+                        <a href="/signin" class="nav-link">Login</a>
                     </li>
                     <li class="nav-item">
                         <a href="/signup" class="nav-link reg">Signup</a>
@@ -300,7 +310,7 @@
                             <a href="findAlumni.html">Find Alumni</a> <br>
                             <a href="imAlumni.html">I'm Alumni</a> <br>
                             <a href="events.html">Event</a> <br>
-                            <a href="/login">Login</a> <br>
+                            <a href="/signin">Login</a> <br>
                             <a href="/signup">Signup</a> <br>
                         </div>
                     </div>
