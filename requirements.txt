@@ -1,3 +1,13 @@
 asgiref==3.8.1
 Django==5.0.6
 sqlparse==0.5.0
+
+
+
+# python3 -m venv env_name
+# source env_name/bin/activate
+# deactivate
+
+# pip install django
+
+# pip install six

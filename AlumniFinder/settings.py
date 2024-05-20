@@ -18,7 +18,7 @@ from . info import *
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 ## for acount activation using email
-EMAIL_USER_TLS = EMAIL_USER_TLS
+EMAIL_USE_TLS = EMAIL_USE_TLS
 EMAIL_HOST = EMAIL_HOST
 EMAIL_HOST_USER = EMAIL_HOST_USER
 EMAIL_HOST_PASSWORD = EMAIL_HOST_PASSWORD
